@@ -44,7 +44,7 @@
         android:onClick="returnReply"/>
 
     <EditText
-        android:id="@+id/editText_main"
+        android:id="@+id/editText_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
