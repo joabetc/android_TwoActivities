@@ -88,4 +88,13 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Log.d(LOG_TAG, "onStart");
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", mReplyTextView.getText().toString());
+        }
+    }
 }
